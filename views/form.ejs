@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="form">
+    <h1>This project is made by Sangam nayak (Raxmice)</h1>
+    <form action="form" method="post">
+        <input type="text" name="fname" placeholder="First Name">
+        <br><input type="text" name="lname" placeholder="Last Name">
+        <br><button type="submit" name="button">Submit</button>
+    </form>
+    <% for (var i=0; i<fname.length; i++){ %> <!--just becouse fname is an array so it will give us a length of array-->
+    <% if(fname !== "" && lname !== ""){ %>
+    <h4 style="color:green">Your Fullname: <%= fname[i] %> <%= lname[i] %> </h4>
+    <% }} %>
+</body>
+</html>
